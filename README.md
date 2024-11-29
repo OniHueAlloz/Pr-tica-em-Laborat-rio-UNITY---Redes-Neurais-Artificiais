@@ -1,2 +1,5 @@
 # Prática em Laboratório UNITY - Redes Neurais Artificiais
  
+ Para uma variação do código, resolvi fazer uma rede neural capaz de identificar se uma cor é quente ou fria. O funcionamento do código WarmCoolColor.cs é bem semelhante, anteriormente com resultados maiores que 0.5 sendo considerados quentes e resultados menores ou iguais a 0.5 sendo considerados frios. 
+ Percebi que, neste caso, a Rede Neural comete mais erros, provavelmente porque tons próximos ao verde e ao violeta não se encaixam tão bem nessa classificação binária de quente e frio, por exemplo tons comumente referidos como roxos seriam considerados frios, enquanto tons comumente referidos como rosa seriam considerados quentes. Por esta razão resolvi adicionar um terceiro resultado de frio e quente ao mesmo tempo.
+ Portanto, resultados maiores que 0.6 são considerados quentes, resultados menores que 0.4 são considerados frios, e resultados entre 0.6 e 0.4, são considerados ambos ou nenhum. Quando o usuário seleciona a opção de ambos/nenhum, a Rede Neural recebe um resultado 0.5.
